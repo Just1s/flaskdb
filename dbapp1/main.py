@@ -24,7 +24,7 @@ def login():
         return render_template('login.html')
 
 
-@app.route('/filtriuoti', methods=['GET', 'POST'])
+@app.route('/filtruoti', methods=['GET', 'POST'])
 def filtras():
     if request.method == 'POST':
         email = request.form['email']
