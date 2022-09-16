@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Žinutės išsiųstos iš {{email}}</h1>
+{%for message in messages_list%}
+<p>{{message}}</p>
+{% endfor %}
+{% endblock %}

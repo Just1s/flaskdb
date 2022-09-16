@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Visos išsaugotos žinutės</h1>
+{%for message in messages_list%}
+<p>{{message}}</p>
+{% endfor %}
+<form action="http://127.0.0.1:5000/login">
+    <input type="submit" value="Siųsti žinutę" />
+</form>
+<form action="http://127.0.0.1:5000/ivest_email">
+    <input type="submit" value="Filtruoti žinutes" />
+</form>
+{% endblock %}
